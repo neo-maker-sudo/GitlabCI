@@ -7,6 +7,7 @@ authors = ["neo <neo@fugu.ooo>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 furo = "^2022.4.7"
+sphinx-copybutton = "^0.5.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
