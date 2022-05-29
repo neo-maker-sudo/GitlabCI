@@ -16,7 +16,6 @@ User Guide
 
    user_guide
    pipelines
-   variables
    jobs
    runners
    ci_yml
