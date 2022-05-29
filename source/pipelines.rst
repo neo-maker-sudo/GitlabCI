@@ -31,7 +31,7 @@ Pipelines 以及 jobs, stages, 這些內容都是被定義每一個專案裡面�
 **View pipelines**
 ##################
 
-你可以 `Project` -> `CI/CD` -> `Pipelines` 頁面查看目前以及歷史的 **Pipelines** 紀錄
+你可以到 `Project` -> `CI/CD` -> `Pipelines` 頁面查看目前以及歷史的 **Pipelines** 紀錄
 
 .. image:: _static/view_pipelines.png
 
@@ -344,12 +344,60 @@ Scheduled pipelines
 
     <br />
 
-Trigger a pipeline
-------------------
-  .. |Trigger a pipeline| raw:: html
+**Prerequisites**
+*****************
 
-    <br />
+- 執行 schedule 必須要 Developer role，如果是操作的 protected breach 必須被允許 merge branch
 
+- GitlabCI 執行的 yaml 檔案必須是有效的
+
+.. note::
+    如果上述條件沒有達成，則 pipeline 不會被建立，也不會有任何錯誤訊息出現。
+
+**Add a pipeline schedule**
+***************************
+
+1. 選擇要執行的 `Project`
+
+2. sidebar 選擇 `CI/CD` -> `Schedules`
+
+3. 選擇 `New schedule`，並把表單填寫完
+
+.. image:: _static/add_pipeline_schedule_1.png
+
+.. rst-class:: image-source
+
+Photo by `Neo Change Gitlab Account`
+
+**Edit a pipeline schedule**
+****************************
+
+1. 選擇要執行的 `Project`
+
+2. sidebar 選擇 `CI/CD` -> `Schedules`
+
+3. 選擇想要執行的 Pipeline Edit 按鈕
+
+.. image:: _static/edit_pipeline_schedule_1.png
+
+.. rst-class:: image-source
+
+Photo by `Neo Change Gitlab Account`
+
+**Run manually**
+****************
+
+1. 選擇要執行的 `Project`
+
+2. sidebar 選擇 `CI/CD` -> `Schedules`
+
+3. 選擇想要執行的 Pipeline Play 按鈕
+
+.. image:: _static/pipeline_schedule_manually_1.png
+
+.. rst-class:: image-source
+
+Photo by `Neo Change Gitlab Account`
 
 Reference
 ---------
