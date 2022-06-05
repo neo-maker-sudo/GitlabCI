@@ -20,7 +20,6 @@ User Guide
    runners
    ci_yml
    ssh_keys
-   deploy
    troubleshooting
 
 Indices and tables
